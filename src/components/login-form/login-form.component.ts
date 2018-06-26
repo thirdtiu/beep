@@ -28,6 +28,7 @@ export class LoginFormComponent {
     const loginResponse = await this.auth.signInWithEmailAndPassword(this.account);
     this.loginStatus.emit(loginResponse);
   }
+  
 
   navigateToRegisterPage() {
     this.navCtrl.push('RegisterPage');
